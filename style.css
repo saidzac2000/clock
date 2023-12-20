@@ -55,3 +55,11 @@ body{
     font-size: 2rem;
     display: block;
 }
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
