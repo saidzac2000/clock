@@ -41,4 +41,21 @@
     };
     actualizarHora();
     var intervalo = setInterval(actualizarHora, 1000);
+
+    // script.js
+document.addEventListener('DOMContentLoaded', function () {
+  var backgroundMusic = document.getElementById('backgroundMusic');
+  var playPauseButton = document.getElementById('playPauseButton');
+
+  playPauseButton.addEventListener('click', function () {
+      if (backgroundMusic.paused) {
+          backgroundMusic.play();
+          playPauseButton.textContent = 'Pause';
+      } else {
+          backgroundMusic.pause();
+          playPauseButton.textContent = 'Play';
+      }
+  });
+});
+
 }())
